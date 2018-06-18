@@ -3,16 +3,10 @@ BASE STYLE
 *******************************/
 
 html {
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    -webkit-box-sizing: inherit;
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -124,15 +118,11 @@ ELEMENTS STYLE
     }
     
     .container-align-center {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
     }
     
     .container-align-start {
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
+        align-items: flex-start;
     }
     
     .question {
@@ -150,19 +140,14 @@ ELEMENTS STYLE
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
 }
 
 .input-group-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     padding: 0.3rem 0;
 }
 
@@ -176,13 +161,8 @@ ELEMENTS STYLE
 }
 
 .input-group-item.other {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .input-group-item.other label {
@@ -196,19 +176,17 @@ ELEMENTS STYLE
 }
 
 .submit div {
-    margin: 2vw 0;
-    padding: 1.2vw 0;
+    margin: 0 0 2rem;
+    padding: 1rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
 }
 
 .submit-button {
     width: 100%;
-    padding: 0.8rem auto;
+    padding: 0.8rem 0;
     border: none;
     border-radius: 0.1rem;
     color: hsla(332, 85%, 24%, 1);
@@ -223,8 +201,7 @@ ELEMENTS STYLE
 .submit-button:focus {
     color: hsla(332, 85%, 20%, 1);
     background-color: hsla(332, 100%, 100%, 0.9);
-    -webkit-box-shadow: 1px 1px 3px hsla(332, 100%, 100%, 0.9), -1px -1px 3px hsla(332, 100%, 100%, 0.9);
-            box-shadow: 1px 1px 3px hsla(332, 100%, 100%, 0.9), -1px -1px 3px hsla(332, 100%, 100%, 0.9);
+    box-shadow: 1px 1px 3px hsla(332, 100%, 100%, 0.9), -1px -1px 3px hsla(332, 100%, 100%, 0.9);
 }
 
 
@@ -232,7 +209,10 @@ ELEMENTS STYLE
 SECTIONS STYLE
 *******************************/
 
-section {
+.description,
+.separator,
+.no-separator,
+.submit {
     padding: 3vh 6vw;
     background-color: hsla(332, 85%, 24%, 0.9);
     position: relative;
@@ -279,11 +259,6 @@ section {
     bottom: -0.5rem;
     height: 0.5rem;
     background-position: center 0;
-}
-
-section:last-child {
-    padding-bottom: 6vh;
-    border: none;
 }
 
 
