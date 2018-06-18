@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FCC Survey Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <h1 id="title" class="page-title">Survey Form</h1>
+    </header>
+    <main>
+        <section class="description">
+            <p id="description">Let us know how we can improve
+                <span class="bgy">Bringa Gyúró</span>.
+            </p>
+        </section>
+        <form action="" id="survey-form" class="survey-form">
+            <section class="separator">
+                <div class="container-align-center">
+                    <label for="name" id="name-label" class="question">Your name:</label>
+                    <div class="answer">
+                        <input type="text" name="name" id="name" required placeholder="Enter your name">
+                    </div>
+                </div>
+                <div class="container-align-center">
+                    <label for="email" id="email-label" class="question">Your email:</label>
+                    <div class="answer">
+                        <input type="email" name="email" id="email" required placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="container-align-center">
+                    <label for="number" id="number-label" class="question">Your age:</label>
+                    <div class="answer">
+                        <input type="number" name="number" id="number" min="1" max="110" placeholder="Enter your age">
+                    </div>
+                </div>
+            </section>
+            <section class="separator">
+                <div class="container-align-start">
+                    <p class="question">How did you hear about
+                        <span class="bgy">Bringa Gyúró</span>?
+                        <br>(Check all that apply)
+                    </p>
+                    <div class="answer input-group">
+                        <div class="input-group-item">
+                            <input type="checkbox" id="newspaper" name="ad" value="newspaper">
+                            <label for="newspaper">through ÖsszeGyúró</label>
+                        </div>
+                        <div class="input-group-item">
+                            <input type="checkbox" id="website" name="ad" value="website">
+                            <label for="website">through www.gyuro.hu</label>
+                        </div>
+                        <div class="input-group-item">
+                            <input type="checkbox" id="poster" name="ad" value="poster">
+                            <label for="poster">through a poster</label>
+                        </div>
+                        <div class="input-group-item">
+                            <input type="checkbox" id="facebook" name="ad" value="facebook">
+                            <label for="facebook">through Facebook</label>
+                        </div>
+                        <div class="input-group-item">
+                            <input type="checkbox" id="friend" name="ad" value="friend">
+                            <label for="friend">through a friend</label>
+                        </div>
+                        <div class="input-group-item other">
+                            <label for="other-ad">Other:</label>
+                            <input type="text" id="other-ad" name="ad">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="separator">
+                <div class="container-align-center">
+                    <label for="dropdown" class="question">How did you take part in the
+                        <span class="bgy">Bringa Gyúró</span>?
+                    </label>
+                    <div class="answer">
+                        <select name="part" id="dropdown">
+                            <option selected disabled>Select an option</option>
+                            <option value="organizer">Organizer</option>
+                            <option value="competitor">Competitor</option>
+                            <option value="viewer">Viewer</option>
+                            <option value="none">I didn't take part</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <section class="separator">
+                <div class="container-align-start">
+                    <p class="question">What did you like the best?
+                        <br>(Check all that apply)</p>
+                    <div class="answer input-group">
+                        <div class="input-group-item">
+                            <input type="checkbox" id="catering" name="the-best" value="catering">
+                            <label for="catering">the catering</label>
+                        </div>
+                        <div class="input-group-item">
+                            <input type="checkbox" id="path" name="the-best" value="path">
+                            <label for="path">the path of the race</label>
+                        </div>
+                        <div class="input-group-item">
+                            <input type="checkbox" id="challenges" name="the-best" value="challenges">
+                            <label for="challenges">the challenges</label>
+                        </div>
+                        <div class="input-group-item">
+                            <input type="checkbox" id="registration" name="the-best" value="registration">
+                            <label for="registration">the fast registration</label>
+                        </div>
+                        <div class="input-group-item">
+                            <input type="checkbox" id="awards" name="the-best" value="awards">
+                            <label for="awards">the lots of awards</label>
+                        </div>
+                        <div class="input-group-item other">
+                            <label for="other-the-best">Other:</label>
+                            <input type="text" id="other-the-best" name="ad">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="separator">
+                <div class="container-align-start">
+                    <p class="question">Would you recommend
+                        <span class="bgy">Bringa Gyúró</span> to a friend?</p>
+                    <div class="answer input-group">
+                        <div class="input-group-item">
+                            <input type="radio" id="definitely" value="definitely" name="recommendation">
+                            <label for="definitely">definitely</label>
+                        </div>
+                        <div class="input-group-item">
+                            <input type="radio" id="maybe" value="maybe" name="recommendation">
+                            <label for="maybe">maybe</label>
+                        </div>
+                        <div class="input-group-item">
+                            <input type="radio" id="not-sure" value="not-sure" name="recommendation">
+                            <label for="not-sure">not sure</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-align-start">
+                    <p class="question">Any comments or suggestions?</p>
+                    <div class="answer">
+                        <textarea name="comments">Enter your comments here...</textarea>
+                    </div>
+                </div>
+            </section>
+            <section class="submit">
+                <div>
+                    <input type="submit" value="Submit" id="submit" class="submit-button">
+                </div>
+            </section>
+        </form>
+    </main>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+
+</html>
